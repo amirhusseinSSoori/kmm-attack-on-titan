@@ -4,6 +4,8 @@ plugins {
     id("org.jetbrains.compose")
 }
 
+
+
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
     androidTarget()
@@ -33,6 +35,12 @@ kotlin {
                 implementation(compose.components.resources)
                 api(compose.materialIconsExtended)
                 api("io.github.qdsfdhvh:image-loader:1.7.1")
+
+                val viewModel = "1.5.7"
+                api("moe.tlaster:precompose:$viewModel")
+                api("moe.tlaster:precompose-viewmodel:$viewModel")
+
+
             }
         }
         val commonTest by getting {
@@ -40,7 +48,7 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        iosMain{
+        iosMain {
 
         }
     }
@@ -64,3 +72,4 @@ android {
         jvmToolchain(17)
     }
 }
+
