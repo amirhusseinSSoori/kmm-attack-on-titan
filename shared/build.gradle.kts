@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("org.jetbrains.compose")
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 
@@ -36,11 +37,15 @@ kotlin {
                 api(compose.materialIconsExtended)
                 api("io.github.qdsfdhvh:image-loader:1.7.1")
 
-                val viewModel = "1.5.7"
-                api("moe.tlaster:precompose:$viewModel")
-                api("moe.tlaster:precompose-viewmodel:$viewModel")
+                val tlaster = "1.5.7"
+                api("moe.tlaster:precompose:$tlaster")
+                api("moe.tlaster:precompose-viewmodel:$tlaster")
 
-
+                implementation("io.ktor:ktor-client-json:2.3.6")
+                implementation("io.ktor:ktor-client-core:2.3.6")
+                implementation("io.ktor:ktor-client-logging:2.3.6")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.6")
+                implementation("io.ktor:ktor-client-content-negotiation:2.3.6")
             }
         }
         val commonTest by getting {
@@ -49,7 +54,10 @@ kotlin {
             }
         }
         iosMain {
-
+            dependencies {
+                implementation("io.ktor:ktor-client-darwin:2.3.6")
+                implementation("io.ktor:ktor-client-ios:2.3.6")
+            }
         }
     }
 }

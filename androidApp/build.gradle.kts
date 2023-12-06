@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     id("org.jetbrains.compose")
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android {
@@ -40,6 +41,7 @@ dependencies {
     implementation(compose.foundation)
     implementation(compose.material)
 
-    implementation("androidx.activity:activity-compose:1.7.1")
+    implementation("androidx.activity:activity-compose:1.8.1")
+
 }
 
