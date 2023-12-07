@@ -40,7 +40,6 @@ dependencies {
     implementation(compose.preview)
     implementation(compose.foundation)
     implementation(compose.material)
-
     implementation("androidx.activity:activity-compose:1.8.1")
 
 }

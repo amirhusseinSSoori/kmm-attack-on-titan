@@ -41,11 +41,12 @@ kotlin {
                 api("moe.tlaster:precompose:$tlaster")
                 api("moe.tlaster:precompose-viewmodel:$tlaster")
 
-                implementation("io.ktor:ktor-client-json:2.3.6")
-                implementation("io.ktor:ktor-client-core:2.3.6")
-                implementation("io.ktor:ktor-client-logging:2.3.6")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.6")
-                implementation("io.ktor:ktor-client-content-negotiation:2.3.6")
+                val ktorVersion = "2.3.6"
+                implementation("io.ktor:ktor-client-json:$ktorVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-logging:$ktorVersion")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
             }
         }
         val commonTest by getting {
@@ -55,8 +56,9 @@ kotlin {
         }
         iosMain {
             dependencies {
-                implementation("io.ktor:ktor-client-darwin:2.3.6")
-                implementation("io.ktor:ktor-client-ios:2.3.6")
+                val ktorVersion = "2.3.6"
+                implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+                implementation("io.ktor:ktor-client-ios:$ktorVersion")
             }
         }
     }
