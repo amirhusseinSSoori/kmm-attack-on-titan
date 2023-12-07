@@ -2,8 +2,8 @@ package com.AmirHusseinSoori.attackOnTitan.data.repository
 
 
 import app.cash.paging.PagingData
-import com.AmirHusseinSoori.attackOnTitan.data.Result
-import com.AmirHusseinSoori.attackOnTitan.data.network.CharacterServices
+import com.AmirHusseinSoori.attackOnTitan.data.entity.Result
+import com.AmirHusseinSoori.attackOnTitan.data.network.services.CharacterServices
 import kotlinx.coroutines.flow.Flow
 
 interface CharacterRepository {

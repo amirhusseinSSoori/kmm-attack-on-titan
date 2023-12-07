@@ -1,7 +1,9 @@
-package com.AmirHusseinSoori.attackOnTitan.data
+package com.AmirHusseinSoori.attackOnTitan.data.paging
 
 import androidx.paging.PagingState
 import app.cash.paging.PagingSource
+import com.AmirHusseinSoori.attackOnTitan.data.entity.CharacterEntity
+import com.AmirHusseinSoori.attackOnTitan.data.entity.Result
 import com.AmirHusseinSoori.attackOnTitan.data.network.AttackOnTitanClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get

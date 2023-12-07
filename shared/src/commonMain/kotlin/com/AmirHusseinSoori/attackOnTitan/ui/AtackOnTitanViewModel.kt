@@ -1,9 +1,9 @@
-package com.AmirHusseinSoori.attackOnTitan.ui.ImageScreen
+package com.AmirHusseinSoori.attackOnTitan.ui
 
 
 import app.cash.paging.PagingData
 import app.cash.paging.cachedIn
-import com.AmirHusseinSoori.attackOnTitan.data.Result
+import com.AmirHusseinSoori.attackOnTitan.data.entity.Result
 import com.AmirHusseinSoori.attackOnTitan.data.repository.CharacterRepository
 
 import kotlinx.coroutines.flow.Flow

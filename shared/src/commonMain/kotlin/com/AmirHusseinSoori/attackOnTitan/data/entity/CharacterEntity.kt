@@ -1,4 +1,4 @@
-package com.AmirHusseinSoori.attackOnTitan.data
+package com.AmirHusseinSoori.attackOnTitan.data.entity
 
 import kotlinx.serialization.Serializable
 

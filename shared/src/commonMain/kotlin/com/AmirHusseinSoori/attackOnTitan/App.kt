@@ -35,7 +35,7 @@ import app.cash.paging.compose.collectAsLazyPagingItems
 
 import com.AmirHusseinSoori.attackOnTitan.data.di.ViewModelModule
 import com.AmirHusseinSoori.attackOnTitan.data.entity.Result
-import com.AmirHusseinSoori.attackOnTitan.ui.ImageScreen.AtackOnTitanViewModel
+import com.AmirHusseinSoori.attackOnTitan.ui.AtackOnTitanViewModel
 import com.AmirHusseinSoori.attackOnTitan.ui.util.LARGE_PADDING
 import com.AmirHusseinSoori.attackOnTitan.ui.util.MEDIUM_PADDING
 import com.AmirHusseinSoori.attackOnTitan.ui.util.SMALL_PADDING

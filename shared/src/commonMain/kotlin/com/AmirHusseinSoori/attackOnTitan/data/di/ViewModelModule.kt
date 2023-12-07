@@ -1,6 +1,6 @@
 package com.AmirHusseinSoori.attackOnTitan.data.di
 
-import com.AmirHusseinSoori.attackOnTitan.ui.ImageScreen.AtackOnTitanViewModel
+import com.AmirHusseinSoori.attackOnTitan.ui.AtackOnTitanViewModel
 
 
 object ViewModelModule {
