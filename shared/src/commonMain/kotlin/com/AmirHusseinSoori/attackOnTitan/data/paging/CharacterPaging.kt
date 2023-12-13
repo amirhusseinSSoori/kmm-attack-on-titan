@@ -3,7 +3,7 @@ package com.AmirHusseinSoori.attackOnTitan.data.paging
 import androidx.paging.PagingState
 import app.cash.paging.PagingSource
 import com.AmirHusseinSoori.attackOnTitan.data.entity.CharacterEntity
-import com.AmirHusseinSoori.attackOnTitan.data.entity.Result
+import com.AmirHusseinSoori.attackOnTitan.data.entity.CharacterResult
 import com.AmirHusseinSoori.attackOnTitan.data.network.AttackOnTitanClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -12,11 +12,11 @@ const val BASE_URL = "https://api.attackontitanapi.com/characters"
 
 class CharacterPagingSource(
     private val httpClient: AttackOnTitanClient,
-) : PagingSource<Int, Result>() {
+) : PagingSource<Int, CharacterResult>() {
 
-    override fun getRefreshKey(state: PagingState<Int, Result>) = state.anchorPosition
+    override fun getRefreshKey(state: PagingState<Int, CharacterResult>) = state.anchorPosition
 
-    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Result> {
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, CharacterResult> {
         val position = params.key ?: 1
         return try {
             val response = httpClient.getHttpClient().get(BASE_URL).body<CharacterEntity>()

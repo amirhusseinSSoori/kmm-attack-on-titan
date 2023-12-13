@@ -1,4 +1,4 @@
-package com.AmirHusseinSoori.attackOnTitan.ui.util
+package com.AmirHusseinSoori.attackOnTitan.ui.component
 
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode

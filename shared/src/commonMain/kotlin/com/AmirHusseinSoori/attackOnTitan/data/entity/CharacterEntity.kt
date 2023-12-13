@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class CharacterEntity(
-    val info: Info,
-    val results: List<Result>
+    val info: CharacterInfo,
+    val results: List<CharacterResult>
 )
 
 @Serializable
@@ -15,7 +15,7 @@ data class Group(
 )
 
 @Serializable
-data class Info(
+data class CharacterInfo(
     val count: Int,
     val next_page: String,
     val pages: Int,
@@ -29,7 +29,7 @@ data class Relative(
 )
 
 @Serializable
-data class Result(
+data class CharacterResult(
     val alias: List<String>,
     val birthplace: String,
     val episodes: List<String>,
