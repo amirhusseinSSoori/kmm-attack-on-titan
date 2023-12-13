@@ -31,6 +31,8 @@ kotlin {
                 implementation(compose.foundation)
                 implementation(compose.animation)
                 implementation(compose.material)
+                implementation(compose.material3)
+
                 implementation("app.cash.paging:paging-compose-common:3.3.0-alpha02-0.4.0")
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
@@ -73,7 +75,7 @@ android {
     dependencies {
         api(compose.runtime)
     }
-
+    sourceSets["main"].resources.srcDirs("src/commonMain/resources")
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
